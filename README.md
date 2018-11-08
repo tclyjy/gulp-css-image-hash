@@ -12,15 +12,3 @@ gulp.task('css', function() {
         .pipe(gulp.dest('./dist'));
 });
 ```
-
-`imagehash` takes an optional parameter to point to the root of your web
-folder.
-
-```js
-var imagehash = require('gulp-css-image-hash');
-gulp.task('css', function() {
-    return gulp.src('./css/*.css')
-        .pipe(imagehash('./web'))
-        .pipe(gulp.dest('./dist'));
-});
-```
